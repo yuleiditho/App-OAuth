@@ -12,6 +12,23 @@
                     {{ __("You're logged in!") }}
                 </div>
             </div>
+
+            <div class=" overflow-hidde sm:rounded-lg flex items-center  shadow-md rounded-lg p-6">
+             
+                <img src="{{ Auth::user()->avatar }}" alt="Foto de perfil"
+                    class="w-16 h-16 rounded-full border-2">
+
+                <div>
+                    <h2 class="text-xl font-semibold text-white sm:px-6">
+                        {{ Auth::user()->name }}
+                    </h2>
+                    <p class="text-sm text-gray-600 sm:px-6">
+                        {{ Auth::user()->email }}
+                    </p>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </x-app-layout>
